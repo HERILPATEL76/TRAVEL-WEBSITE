@@ -1,0 +1,154 @@
+:root {
+    --primary-blue: #0077cc;
+    /* Sky Blue */
+    --secondary-orange: #ff9933;
+    /* Sunset Orange */
+    --beige: #f5f5dc;
+    /* Sand Beige */
+    --teal: #008080;
+    /* Ocean Teal */
+    --green: #4CAF50;
+    /* Forest Green */
+    --light-grey: #f8f9fa;
+    /* Bootstrap light background */
+    --dark-grey: #343a40;
+    /* Bootstrap dark text */
+}
+
+.card-img-top {
+    /* Added/ensure this rule from previous steps */
+    height: 200px;
+    /* Consistent height */
+    object-fit: cover;
+}
+.object-fit-cover { /* Added/ensure this rule from previous steps */
+    object-fit: cover;
+}
+
+.icon-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.icon-box i {
+    font-size: 3rem;
+    /* Size of the icons */
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-grey);
+    line-height: 1.6;
+    padding-bottom: 55px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    color: var(--dark-grey);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--primary-blue) !important;
+}
+
+.nav-link {
+    color: var(--dark-grey) !important;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    color: var(--primary-blue) !important;
+}
+
+/* Add this rule to your css/style.css file */
+.card-img-top {
+    height: 500px;
+    /* Or any fixed height you prefer */
+    object-fit: cover;
+    /* Ensures the image covers the area without distortion */
+}
+
+/* You might already have this, ensure it's there */
+.card {
+    border: none;
+    border-radius: 10px !important;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-primary {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+.btn-primary:hover {
+    background-color: darken(var(--primary-blue), 10%);
+    border-color: darken(var(--primary-blue), 10%);
+}
+
+.bg-travel {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Dark overlay for readability */
+}
+
+/* Add more custom styles as needed for specific sections */
+
+/* ... existing styles ... */
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+/* ... existing styles ... */
+
+/* Add a background image for the contact section */
+.bg-travel[style*="background-image: url('images/contact-bg.jpg')"] {
+    background-image: url('../images/contact-bg.jpg');
+    /* Adjust path if necessary */
+}
+
+.card.bg-light {
+    background-color: rgba(248, 249, 250, 0.8) !important;
+    /* Slightly transparent background for the form */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+/*
+.content-pb {
+    margin-bottom: 70px;
+}
+*/
